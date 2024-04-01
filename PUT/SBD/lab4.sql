@@ -89,4 +89,4 @@ end as etykieta
 from zespoly z, pracownicy p
 where p.id_zesp = z.id_zesp
 group by z.nazwa
-order by z.nazwa;
+order by z.nazwa; 
