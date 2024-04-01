@@ -68,4 +68,4 @@ DECODE(SIGN(placa_pod - 480),
 1, 'Powyżej 480',
 -1, 'Poniżej 480',
 'Dokładnie 480') AS prog
-FROM pracownicy ORDER BY placa_pod DESC;
+FROM pracownicy ORDER BY placa_pod DESC; 
