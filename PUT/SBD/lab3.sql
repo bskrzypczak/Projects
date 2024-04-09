@@ -108,4 +108,3 @@ select id_zesp, SUM(placa_pod) as suma_plac,
 string_agg(nazwisko || ':' || placa_pod, ';' order by nazwisko) as pracownicy
 from pracownicy
 group by id_zesp order by id_zesp;
-
