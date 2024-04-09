@@ -79,26 +79,33 @@ from pracownicy p, zespoly z, etaty e;
 -- ZADANIE 11 --
 
 select etat from pracownicy
-except
+where extract(year from zatrudniony) = 1992
+intersect
 select etat from pracownicy
-where extract(year from zatrudniony) not in(1992, 1993)
+where extract(year from zatrudniony) = 1993
 order by etat;
 
 -- ZADANIE 12 --
 
+select id_zesp
+from zespoly
+except
 select z.id_zesp
-from zespoly z left outer join pracownicy p
-on z.id_zesp = p.id_zesp
+from pracownicy p join zespoly z 
+on p.id_zesp = z.id_zesp 
 group by z.id_zesp
-having count(p.id_prac) = 0;
+having count(p.id_prac) > 0;
 
 -- ZADANIE 13 --
 
-select z.id_zesp, z.nazwa
-from zespoly z left outer join pracownicy p
-on z.id_zesp = p.id_zesp
+select id_zesp, nazwa
+from zespoly
+except
+select z.id_zesp, z.nazwa 
+from pracownicy p join zespoly z 
+on p.id_zesp = z.id_zesp 
 group by z.id_zesp, z.nazwa
-having count(p.id_prac) = 0;
+having count(p.id_prac) > 0;
 
 -- ZADANIE 14 --
 
@@ -107,4 +114,3 @@ UNION
 select nazwisko, placa_pod, 'Dokladnie 480' as prog from pracownicy where placa_pod = 480
 UNION
 select nazwisko, placa_pod, 'Powyzej 480' as prog from pracownicy where placa_pod > 480
-order by placa_pod;
