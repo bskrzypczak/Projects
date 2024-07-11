@@ -14,7 +14,7 @@
 
 ## Example of UI:
 <p align="center"><img align="center" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/Projekt%20zaliczeniowy/tablice.png" height="800" width="380" /></p>
-<p align="center"><img align="center" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/Projekt%20zaliczeniow/tablice2.png" height="800" width="380" /></p>
+<p align="center"><img align="center" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/Projekt%20zaliczeniowy/tablice2.png" height="800" width="380" /></p>
 
 <footer>
 <!--
