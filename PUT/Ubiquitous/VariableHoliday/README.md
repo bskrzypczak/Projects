@@ -13,7 +13,7 @@
 
 
 ## Example of UI:
-<p align="center"><img align="center" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/VariableHoliday/kalendarz.png" height="900" width="380" /></p>
+<p align="center"><img align="center" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/VariableHoliday/kalendarz.png" height="800" width="380" /></p>
 <p align="center"><img align="center" src="https://github.com/dataproctech/long-term-project-java-bskrzypczak/blob/main/Aquarium2.png" height="400" width="700" /></p>
 
 <footer>
