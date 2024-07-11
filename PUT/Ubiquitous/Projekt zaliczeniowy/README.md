@@ -9,7 +9,7 @@
   Add your open source license, GitHub uses the MIT license.
 -->
 
-# Variable Holiday (Bartosz Skrzypczak)
+# Projekt zaliczeniowy - tablice rej. (Bartosz Skrzypczak)
 
 
 ## Example of UI:
