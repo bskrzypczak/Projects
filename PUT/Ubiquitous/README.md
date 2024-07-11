@@ -1,1 +1,3 @@
-...
+PL: Założeniem przedmiotu było wprowadzenie języka Swift i umiejętności tworzenia aplikacji dla urządzeń Apple. Niestety, przez małą liczbę zajęć, nasza praca ograniczała się do uzupełniania kodów prowadzącego. Wyjątkiem był "Projekt zaliczeniowy", gdzie podany szkielet projketu był niewielki i większość pracy była wykonana przez studenta.
+
+EN: The purpose of this course was to introduce Swift language and the ability to develop aplications for Apple devices. Unlikely, due to few hours of course, our work was limited to completing lecturer's codes. Excluding "Projekt zaliczeniowy" whose framework was unsignificant and most of work was done by the student.
