@@ -15,6 +15,7 @@
 ## Example of UI:
 <p align="center"><img align="left" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/VariableHoliday/kalendarz.png" height="800" width="380" /></p>
 <p align="center"><img align="right" src="https://github.com/bskrzypczak/Projects/blob/main/PUT/Ubiquitous/VariableHoliday/kalendarz2.png" height="800" width="380" /></p>
+</br>
 
 <footer>
 
