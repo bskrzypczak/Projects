@@ -25,14 +25,14 @@ def wzglednie_pierwsze(a, b):
 
 
 def generator(N, dlugosc):
-    x = random.randint(1, N)
+    x = random.randint(N, 100000*N)
     while not wzglednie_pierwsze(x, N):
         x = random.randint(1, N)
     ciag = []
-    x_i = (x*x)%N
+    x_i = pow(x, 2, N)
     ciag.append(x_i%2)
     for i in range(1, dlugosc):
-        x_i = (x_i * x_i)%N
+        x_i = pow(x_i, 2, N)
         ciag.append(x_i%2)
     return ciag
 
@@ -64,35 +64,46 @@ def test_pojedynczych_bitow(ciag):
             liczba_jedynek += 1
     
     if liczba_jedynek > 9725 and liczba_jedynek < 10275:
-        print("Test dlugiej serii: SUKCES -", liczba_jedynek)
+        print("Test pojedynczych bitow: SUKCES -", liczba_jedynek)
     else:
-        print("Test dlugiej serii: PORAZKA - ", liczba_jedynek)
+        print("Test pojedynczych bitow: PORAZKA - ", liczba_jedynek)
 
 
 def test_serii(ciag):
-    serie = [0, 0, 0, 0, 0, 0]
+    serie_0 = [0, 0, 0, 0, 0, 0]
+    serie_1 = [0, 0, 0, 0, 0, 0]
+    progi = [[2315, 2685], [1114, 1386], [527, 723], [240, 384], [103, 209], [103, 209]]
     dlugosc = 1
     for i in range(1, len(ciag)):
         if ciag[i] == ciag[i - 1]:
             dlugosc += 1
         else:
             if dlugosc <= 6:
-                serie[dlugosc - 1] += 1
+                if ciag[i - 1] == 1:
+                    serie_1[dlugosc - 1] += 1
+                else:
+                    serie_0[dlugosc - 1] += 1
+            elif ciag[i - 1] == 1:
+                serie_1[5] += 1
             else:
-                serie[5] += 1
+                serie_0[5] += 1
             dlugosc = 1
 
     if dlugosc <= 6:
-        serie[dlugosc - 1] += 1
+        if ciag[19999] == 1:
+            serie_1[dlugosc - 1] += 1
+        else:
+            serie_0[dlugosc - 1] += 1
+    elif ciag[19999] == 1:
+        serie_1[5] += 1
     else:
-        serie[5] += 1
+        serie_0[5] += 1
 
-    if (serie[0] >= 2315 and serie[0] <= 2685) and (serie[1] >= 1114 and serie[1] <= 1386) and (
-        serie[2] >= 527 and serie[2] <= 723) and (serie[3] >= 240 and serie[3] <= 384) and (
-            serie[4] >= 103 and serie[4] <= 209) and (serie[5] > 103 and serie[5] < 209):
-                print("Test serii: SUKCES - ", serie)
-    else:
-        print("Test serii: PORAZKA - ", serie)
+    for index, prog in enumerate(progi):
+        if serie_0[index] < prog[0] or serie_0[index] > prog[1] or serie_1[index] < prog[0] or serie_1[index] > prog[1]:
+            print("Test serii: PORAZKA - ", serie_0, serie_1)
+            return
+    print("Test serii: SUKCES - ", serie_0, serie_1)
 
 
 def test_pokerowy(ciag):
@@ -113,6 +124,6 @@ def test_pokerowy(ciag):
 blum = wyznaczenie_Bluma()
 ciag_wynikowy = generator(blum, 20000)
 test_dl_serii(ciag_wynikowy)
-test_pojedynczych_bitow(ciag_wynikowy) 
+test_pojedynczych_bitow(ciag_wynikowy)
 test_serii(ciag_wynikowy)
 test_pokerowy(ciag_wynikowy)

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+body {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+p {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    display: flex;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: right;
+    align-self: flex-start;
+}
+
+nav a {
+    width: 75px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+main {
+    padding: 15px;
+}
+
+main article {
+    margin: 15px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+article h2{
+    margin: 0px;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background-color: lightgray;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+article p {
+    text-align: justify;
+    padding: 15px;
+}
+
+footer {
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.hamburger {
+    width: 40px;
+    height: 30px;
+    display: none; /* Domyślnie ukryty */
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+
+@media all and (max-width: 900px){
+    main {
+        flex-wrap: wrap;
+    }
+    header {
+        justify-content: space-between;
+    }
+
+    header h1,
+    header nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
