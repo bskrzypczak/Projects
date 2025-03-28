@@ -1,0 +1,180 @@
+sample 0 - TAK - Próbka jest językiem, poniewaz niemalze wszystkie wartości entropii zawierają się w przedziałach wyznaczonych przez minimalne i maksymalne wartości dla prawdziwych języków.
+
+sample 1 - TAK - Próbka jest językiem, poniewaz niemalze wszystkie wartości entropii zawierają się w przedziałach wyznaczonych przez minimalne i maksymalne wartości dla prawdziwych języków.
+
+sample2 - TAK - Próbka jest językiem, poniewaz niemalze wszystkie wartości entropii zawierają się w przedziałach wyznaczonych przez minimalne i maksymalne wartości dla prawdziwych języków.
+
+sample 3 - TAK - Próbka jest językiem, poniewaz wszystkie wartości entropii, zarowno dla liter jak i słów, zawierają się w przedziałach wyznaczonych przez minimalne i maksymalne wartości dla prawdziwych języków.
+
+sample4 - NIE - Próbka nie jest językiem, poniewaz entropie dla słów rzędów >= 2 są za małe (0.23 - 7*10-6), z kolei dla rzędu 0 wartość 17.13 jest wysoka i gwałtownie spada.
+
+sample5 - NIE - Próbka nie jest językiem, poniewaz entropie dla słów rzędów >= 1 są równe 0.
+
+
+
+Analiza jezyka: norm_wiki_en.txt
+
+Entropia liter rzedu 0: 4.288221453845133
+Entropia slow rzedu 0: 11.543993773635416
+Entropia liter rzedu 1: 3.5166047989860187
+Entropia slow rzedu 1: 6.3891750659634585
+Entropia liter rzedu 2: 3.018319190791138
+Entropia slow rzedu 2: 2.176460456201663
+Entropia liter rzedu 3: 2.4815659195766586
+Entropia slow rzedu 3: 0.48467886887247624
+Entropia liter rzedu 4: 2.0211849323217086
+Entropia slow rzedu 4: 0.10965315372404548
+
+
+Analiza jezyka: norm_wiki_eo.txt
+
+Entropia liter rzedu 0: 4.176788490262166
+Entropia slow rzedu 0: 11.560529950317907
+Entropia liter rzedu 1: 3.340005176314087
+Entropia slow rzedu 1: 6.557678791146433
+Entropia liter rzedu 2: 2.8718267987596153
+Entropia slow rzedu 2: 2.4847195982715844
+Entropia liter rzedu 3: 2.3926250001742098
+Entropia slow rzedu 3: 0.6336182904597191
+Entropia liter rzedu 4: 1.9915100520666937
+Entropia slow rzedu 4: 0.16165828758952883
+
+
+Analiza jezyka: norm_wiki_et.txt
+
+Entropia liter rzedu 0: 4.169833224728489
+Entropia slow rzedu 0: 13.746243545091751
+Entropia liter rzedu 1: 3.5069581563728938
+Entropia slow rzedu 1: 5.424182735154944
+Entropia liter rzedu 2: 3.1344061132062526
+Entropia slow rzedu 2: 0.9047403322074711
+Entropia liter rzedu 3: 2.610865653559243
+Entropia slow rzedu 3: 0.11619701012001536
+Entropia liter rzedu 4: 2.1114422737181266
+Entropia slow rzedu 4: 0.023647299885484287
+
+
+Analiza jezyka: norm_wiki_so.txt
+
+Entropia liter rzedu 0: 4.040113860382521
+Entropia slow rzedu 0: 11.731104737245332
+Entropia liter rzedu 1: 3.299565873145861
+Entropia slow rzedu 1: 5.3987381933512415
+Entropia liter rzedu 2: 2.8443716239264476
+Entropia slow rzedu 2: 1.6086239389559995
+Entropia liter rzedu 3: 2.374310593176142
+Entropia slow rzedu 3: 0.4096065365721564
+Entropia liter rzedu 4: 1.9450324843384685
+Entropia slow rzedu 4: 0.11661094741552985
+
+
+Analiza jezyka: norm_wiki_ht.txt
+
+Entropia liter rzedu 0: 4.146385764101037
+Entropia slow rzedu 0: 8.166919505035342
+Entropia liter rzedu 1: 3.113860480602136
+Entropia slow rzedu 1: 3.1931129940796175
+Entropia liter rzedu 2: 2.273524831268281
+Entropia slow rzedu 2: 1.3113254516229174
+Entropia liter rzedu 3: 1.4921524582748746
+Entropia slow rzedu 3: 0.8122267949332048
+Entropia liter rzedu 4: 1.0521432391231005
+Entropia slow rzedu 4: 0.6205720742965245
+
+
+Analiza jezyka: norm_wiki_nv.txt
+
+Entropia liter rzedu 0: 3.8749372588209434
+Entropia slow rzedu 0: 9.15401183080255
+Entropia liter rzedu 1: 2.9472671465949576
+Entropia slow rzedu 1: 3.863931347467016
+Entropia liter rzedu 2: 2.367579621897086
+Entropia slow rzedu 2: 1.7188041994484018
+Entropia liter rzedu 3: 1.7952629128164133
+Entropia slow rzedu 3: 0.8992519126691114
+Entropia liter rzedu 4: 1.3415964492397379
+Entropia slow rzedu 4: 0.5385700572391845
+
+
+Analiza probki: sample0.txt
+
+Entropia liter rzedu 0: 4.273001240566633
+Entropia slow rzedu 0: 7.748741386140158
+Entropia liter rzedu 1: 2.9158940043478925
+Entropia slow rzedu 1: 7.486391705240514
+Entropia liter rzedu 2: 2.0003592449348733
+Entropia slow rzedu 2: 4.406703462159543
+Entropia liter rzedu 3: 1.5392818308881384
+Entropia slow rzedu 3: 0.5950087061854483
+Entropia liter rzedu 4: 1.4385817627111692
+Entropia slow rzedu 4: 0.012062127698812566
+
+
+Analiza probki: sample1.txt
+
+Entropia liter rzedu 0: 4.1270061355497205
+Entropia slow rzedu 0: 11.500698483659841
+Entropia liter rzedu 1: 3.239149992123346
+Entropia slow rzedu 1: 5.372245318603172
+Entropia liter rzedu 2: 2.8612796847871955
+Entropia slow rzedu 2: 1.5747393031016652
+Entropia liter rzedu 3: 2.3266847405634272
+Entropia slow rzedu 3: 0.5075112949820157
+Entropia liter rzedu 4: 1.8135100091144774
+Entropia slow rzedu 4: 0.2934580669379857
+
+
+Analiza probki: sample2.txt
+
+Entropia liter rzedu 0: 3.993311800232584
+Entropia slow rzedu 0: 8.023869815826421
+Entropia liter rzedu 1: 3.0504392827811286
+Entropia slow rzedu 1: 7.348623166132961
+Entropia liter rzedu 2: 2.467660235741553
+Entropia slow rzedu 2: 3.7819360988737083
+Entropia liter rzedu 3: 1.9397723261443964
+Entropia slow rzedu 3: 0.859505963114632
+Entropia liter rzedu 4: 1.7020325739558675
+Entropia slow rzedu 4: 0.08199123582453278
+
+
+Analiza probki: sample3.txt
+
+Entropia liter rzedu 0: 3.930297834157987
+Entropia slow rzedu 0: 9.061119324692852
+Entropia liter rzedu 1: 3.184467067095424
+Entropia slow rzedu 1: 5.950220848452501
+Entropia liter rzedu 2: 2.6278957095513036
+Entropia slow rzedu 2: 2.630807418223316
+Entropia liter rzedu 3: 2.0239914888058426
+Entropia slow rzedu 3: 1.2640914239206222
+Entropia liter rzedu 4: 1.534243355401023
+Entropia slow rzedu 4: 0.41432739497179144
+
+
+Analiza probki: sample4.txt
+
+Entropia liter rzedu 0: 4.2538095673790135
+Entropia slow rzedu 0: 17.129669110943123
+Entropia liter rzedu 1: 4.229101430962357
+Entropia slow rzedu 1: 3.4442531122077646
+Entropia liter rzedu 2: 4.226828937890972
+Entropia slow rzedu 2: 0.2340760170378599
+Entropia liter rzedu 3: 4.178535148281906
+Entropia slow rzedu 3: 0.0032274276117648373
+Entropia liter rzedu 4: 3.7661315160327105
+Entropia slow rzedu 4: 7.608894145064654e-06
+
+
+Analiza probki: sample5.txt
+
+Entropia liter rzedu 0: 4.441688018481797
+Entropia slow rzedu 0: 16.50952760746038
+Entropia liter rzedu 1: 3.523098126085035
+Entropia slow rzedu 1: 0.0
+Entropia liter rzedu 2: 3.2506208546492124
+Entropia slow rzedu 2: 0.0
+Entropia liter rzedu 3: 2.834271485651657
+Entropia slow rzedu 3: 0.0
+Entropia liter rzedu 4: 2.1724407900555236
+Entropia slow rzedu 4: 0.0

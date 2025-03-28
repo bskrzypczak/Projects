@@ -1,0 +1,32 @@
+(define (problem gsoko1a)
+    (:domain hanoi)
+    (:objects x y z - wieza
+            k1 k2 k3 k4 k5 - klocek)
+    (:init
+        (mniejszy k1 k2)
+        (mniejszy k1 k3)
+        (mniejszy k1 k4)
+        (mniejszy k1 k5)
+        (mniejszy k2 k3)
+        (mniejszy k2 k4)
+        (mniejszy k2 k5)
+        (mniejszy k3 k4)
+        (mniejszy k3 k5)
+        (mniejszy k4 k5)
+        (na-wiezy k1 x)
+        (na-wiezy k2 x)
+        (na-wiezy k3 x)
+        (na-wiezy k4 x)
+        (na-wiezy k5 x)
+    )
+
+    (:goal
+        (and
+            (na-wiezy k1 z)
+            (na-wiezy k2 z)
+            (na-wiezy k3 z)
+            (na-wiezy k4 z)
+            (na-wiezy k5 z)
+        )
+    )
+)
